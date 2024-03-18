@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Account Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Manage Your Account Settings</h1>
+
+    <div class="row">
+      <label for="sync-preferences">
+        <strong>Sync Preferences</strong>
+        <p>Enable this feature to harmonize your settings and preferences seamlessly across all your linked accounts. Never worry about configuring each one separately again.</p>
+      </label>
+      <div class="input">
+        <label class="switch">
+          <input type="checkbox" name="sync-preferences">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <label for="online-visibility">
+        <strong>Online Visibility</strong>
+        <p>Control whether your online status is visible to others. Toggle this setting to maintain your privacy or let friends and colleagues know when you're available.</p>
+      </label>
+      <div class="input">
+        <label class="switch">
+          <input type="checkbox" name="online-visibility">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+    
+    <div class="row">
+      <label for="privacy-controls">
+        <strong>Privacy Controls</strong>
+        <p>Customize your privacy preferences to strike the right balance between sharing and safeguarding your personal information.</p>
+      </label>
+      <div class="input">
+        <label class="switch">
+          <input type="checkbox" name="privacy-controls">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <label for="dark-mode">
+        <strong>Dark Mode</strong>
+        <p>Set your preference for whether or not you would like to view the app in dark mode.</p>
+      </label>
+      <div class="input">
+        <label class="switch">
+          <input type="checkbox" name="dark-mode" id="dark-mode">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div>
+        <strong>Delete Account</strong>
+        <p>Choose to permanently remove your account from our platform. This option allows you to leave our service if you no longer wish to use it.</p>
+      </div>
+      <div class="input">
+        <button id="delete">Delete</button>
+      </div>    
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <h2>Are You Sure?</h2>
+      <p>Do you really want to delete your account? This process cannot be undone.</p>
+      <button id="cancel">No, Cancel</button>
+      <button id="confirm">Yes, Delete</button>
+    </div>
+  </div>
+
+</body>
+</html>
